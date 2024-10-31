@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background for better contrast */
+        }
+        .container {
+            margin-top: 50px; /* Spacing from the top */
+            background-color: #ffffff; /* White background for content */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding around the content */
+        }
+        h1 {
+            color: #343a40; /* Darker text color */
+            text-align: center; /* Centered heading */
+            margin-bottom: 30px; /* Space below heading */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Vertical alignment */
+            align-items: center; /* Center buttons */
+        }
+        .smart-button {
+            width: 200px; /* Fixed width for buttons */
+            margin: 10px 0; /* Vertical margin */
+            font-size: 18px; /* Larger text */
+            background-color: #007bff; /* Primary color */
+            color: white; /* Text color */
+            border: none; /* No border */
+            border-radius: 5px; /* Slightly rounded edges */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+        .smart-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        #status {
+            margin-top: 20px; /* Spacing above status */
+            font-size: 18px; /* Larger status text */
+            color: #343a40; /* Dark text for status */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home Control</h1>
+        <div class="button-container">
+            <button class="smart-button" id="lightButton">Toggle Light</button>
+            <button class="smart-button" id="fanButton">Turn Fan</button>
+            <button class="smart-button" id="lockButton">Lock Door</button>
+            <button class="smart-button" id="temperatureButton">Temperature</button>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
